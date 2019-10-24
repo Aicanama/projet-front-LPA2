@@ -1,0 +1,4 @@
+[build]
+base = "counters/"
+publish = "dist/"
+command = "npm run build"
