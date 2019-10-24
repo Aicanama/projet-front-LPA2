@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7f96463c-7624-4812-85af-c11d1a2bf061/deploy-status)](https://app.netlify.com/sites/front-lpa2-imelouno/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/611608f4-c38d-4273-846c-cbd0a3f5b083/deploy-status)](https://app.netlify.com/sites/front-lpa2-imelouno/deploys)
 
 # Counters
 
