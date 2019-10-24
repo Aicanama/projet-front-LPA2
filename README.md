@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f96463c-7624-4812-85af-c11d1a2bf061/deploy-status)](https://app.netlify.com/sites/front-lpa2-imelouno/deploys)
+
 # Counters
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
