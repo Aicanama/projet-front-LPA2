@@ -1,4 +1,0 @@
-[build]
-base = "counters/"
-publish = "counters/buld"
-command = "npm run build"
