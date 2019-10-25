@@ -1,6 +1,11 @@
-h1 {
+h2 {
     color : darkorange;
 }
 button {
     color : rgb(145, 95, 31);
+}
+
+p {
+    font-size: 200%;
+    color : rgb(236, 207, 78);
 }
