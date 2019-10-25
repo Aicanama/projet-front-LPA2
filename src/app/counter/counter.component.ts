@@ -8,7 +8,7 @@ import { CounterService } from '../counter.service';
 })
 export class CounterComponent implements OnInit {
 
-  title ='Compteur 1'
+  title ='Compteur'
 
   @Input() position;
 

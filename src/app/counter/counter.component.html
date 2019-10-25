@@ -1,5 +1,17 @@
-<h1>{{title}}</h1>
 <p>
-    {{counterService.initialValue[position]}}
-    <button (click)="increment()">Incrementer</button>
+        <mat-card class="example">
+                <mat-card-header>
+                  <mat-card-title><h2>{{title}} {{position}}</h2></mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>
+                    {{counterService.initialValue[position]}} 
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button (click)="increment()">Incrementer</button>
+                </mat-card-actions>
+            </mat-card>
+               
+             
 </p>
