@@ -6,7 +6,7 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a routerLink="profile" *ngIf="auth.loggedIn">  Profile</a>
+      <a mat-list-item href="#" routerLink="profile" *ngIf="auth.loggedIn">Profile</a>
       <a mat-list-item href="#">Link 2</a>
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
