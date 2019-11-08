@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule}    from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     CounterComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
