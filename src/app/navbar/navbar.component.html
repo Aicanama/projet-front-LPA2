@@ -6,14 +6,16 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-        <a mat-list-item routerLink="/">Home</a>
+      <a mat-list-item routerLink="/">Home</a>
 
       <a mat-list-item routerLink="profile" *ngIf="auth.loggedIn">Profile</a>
      
-      <a mat-list-item [matMenuTriggerFor]="CountersMenu">Tous les Compteurs <mat-icon>arrow_drop_down</mat-icon></a>
-      
-      <mat-menu #menu="CountersMenu">
-        <button
+      <a mat-list-item [matMenuTriggerFor]="menu">
+        Tous les Compteurs
+        <mat-icon aria-hidden="false" aria-label="Example home icon">expand_more</mat-icon>
+      </a>
+      <mat-menu #menu="matMenu">
+        <button 
           mat-menu-item
           *ngFor='let counter of counters'
           [routerLink]="'counter/' + counter.id">{{ counter.name }}</button>
