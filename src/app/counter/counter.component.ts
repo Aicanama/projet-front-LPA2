@@ -1,30 +1,40 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CounterService } from '../counter.service';
 import { Counter } from '../counter';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
+
 export class CounterComponent implements OnInit {
 
-  title ='Compteur'
+  @Input() id : number;
+  name: string;
+  value: number;
+  
 
-  @Input() position: number;
-
-  value: Counter;
-
-  constructor(public counterService : CounterService) { }
-
+  constructor(public counterService: CounterService, private route: ActivatedRoute) { }
+  
   ngOnInit() {
-    console.log("call counter")
-    this.counterService.getCounterValue(this.position)
-          .subscribe(counter => this.value =  counter)
+    this.counterService.getCounter(this.id)
+    .subscribe(counter => {
+              this.value =  counter.value;
+              this.name = counter.name;
+              this.id=counter.id;
+    });
   }
 
 
-  increment(){
-    this.counterService.increment().subscribe(counter => this.value = counter);
+
+  increment() {
+    this.counterService.increment(this.id)
+      .subscribe(counter => {
+        this.value = counter.value;
+      });
   }
+
 }
+
