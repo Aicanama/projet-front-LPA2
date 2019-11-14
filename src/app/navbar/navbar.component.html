@@ -12,8 +12,11 @@
      
       <a mat-list-item [matMenuTriggerFor]="CountersMenu">Tous les Compteurs <mat-icon>arrow_drop_down</mat-icon></a>
       
-      <mat-menu #countersMenu="matMenu">
-          <a mat-menu-item *ngFor="let counter of counters" routerLink="/counter/{{ counter.id }}">NO.{{ counter.id }}  {{ counter.name | titlecase  }}</a>
+      <mat-menu #menu="CountersMenu">
+        <button
+          mat-menu-item
+          *ngFor='let counter of counters'
+          [routerLink]="'counter/' + counter.id">{{ counter.name }}</button>
       </mat-menu>
 
     </mat-nav-list>
