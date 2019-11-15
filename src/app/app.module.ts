@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CounterContentComponent } from './counter-content/counter-content.component';
 
+import { ActionCableService } from 'angular2-actioncable';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { CounterContentComponent } from './counter-content/counter-content.compo
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ActionCableService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

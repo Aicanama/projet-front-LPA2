@@ -27,14 +27,11 @@ export class CounterComponent implements OnInit {
     });
   }
 
-
-
   increment() {
     this.counterService.increment(this.id)
       .subscribe(counter => {
         this.value = counter.value;
       });
   }
-
 }
 
